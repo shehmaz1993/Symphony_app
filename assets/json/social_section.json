@@ -1,0 +1,36 @@
+{
+  "status": "success",
+  "data": {
+    "model_name": "Helio 50",
+    "model_image": "assets/images/image34.png",
+    "validity": "406",
+    "expire_date": "December 10, 2024",
+    "games": [
+      {
+        "id": 101,
+        "title": "Call of Duty",
+        "image": "assets/images/image29.png",
+        "genre": "Shooter",
+        "platform": "PC",
+        "price": 59.99
+      },
+      {
+        "id": 102,
+        "title": "FIFA 24",
+        "image": "assets/images/image30.png",
+        "genre": "Sports",
+        "platform": "PS5",
+        "price": 49.99
+      },
+      {
+        "id": 103,
+        "title": "FIFA 24",
+        "image": "assets/images/image31.png",
+        "genre": "Sports",
+        "platform": "PS5",
+        "price": 49.99
+      }
+    ]
+  }
+}
+

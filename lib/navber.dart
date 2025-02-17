@@ -4,7 +4,6 @@ import 'package:symphony_app/view/bottom_nav_screen/stacked_screens.dart';
 
 class NavBar extends StatelessWidget {
 
-
   @override
   Widget build(BuildContext context){
     return LayoutBuilder(

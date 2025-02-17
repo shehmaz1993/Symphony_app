@@ -1,12 +1,14 @@
 {
   "status": "success",
   "data": {
+    "header_image":"assets/images/image34.png",
+    "entertain_image":"assets/images/frame10.png",
     "products": [
       {
         "id": 1,
         "name": "Mobile",
         "price": 699.99,
-        "image": "assets/images/mobile",
+        "image": "assets/images/mobile.png",
         "category": "Electronics",
         "in_stock": true,
         "ratings": 4.5
@@ -14,7 +16,7 @@
       {
         "id": 2,
         "name": "Watches",
-        "image": "asstes/images/watch",
+        "image": "assets/images/watch.png",
         "category": "Watches",
         "in_stock": false,
         "ratings": 4.2
@@ -22,7 +24,7 @@
 	  {
         "id": 3,
         "name": "Accessories",
-        "image": "assets/images/accessories",
+        "image": "assets/images/accessories.png",
         "category": "Accessories",
         "in_stock": false,
         "ratings": 4.2
@@ -30,7 +32,7 @@
 	  {
         "id": 4,
         "name": "Head Phones",
-        "image": "assets/images/headphones",
+        "image": "assets/images/headphones.png",
         "category": "Accessories",
         "in_stock": false,
         "ratings": 4.2
