@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:symphony_app/view/bottom_nav_screen/stacked_screens.dart';
-
+import 'package:symphony_app/view/stacked_screens/stacked_screens.dart';
 
 class NavBar extends StatelessWidget {
 

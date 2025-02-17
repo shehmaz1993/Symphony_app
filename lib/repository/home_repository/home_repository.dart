@@ -11,7 +11,7 @@ class HomeRepository{
 
   Future<ProductModel> productListFromJson()async{
     dynamic response = await _jsonService.getLocalJson(AppUrl.jsonString);
-    print(response['data']['products']);
+
     return ProductModel.fromJson(response);
   }
 

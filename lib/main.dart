@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:symphony_app/view/bottom_nav_screen/stacked_screens.dart';
+
 import 'package:get/get.dart';
+import 'package:symphony_app/navber.dart';
+import 'package:symphony_app/view/stacked_screens/stacked_screens.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -13,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: StackedScreens(),
+      home: NavBar(),
     );
   }
 }

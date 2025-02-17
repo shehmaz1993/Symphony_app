@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:symphony_app/view/Home_screen/home_screen.dart';
-import 'package:symphony_app/view/bottom_nav_screen/custom_nav_bar.dart';
-import 'package:symphony_app/view/sicial_media%20page/social_media_page.dart';
+
 import 'package:symphony_app/view/web_screen/web_service_screen.dart';
+
+import '../social_screen/social_screen.dart';
+import 'custom_nav_bar.dart';
 
 class StackedScreens extends StatefulWidget {
   const StackedScreens({super.key});
@@ -15,9 +17,9 @@ class _StackedScreensState extends State<StackedScreens> {
   int _selectedIndex = 1;
 
   final List<Widget> _screens = [
-    const WebServiceScreen(),
-    const HomeScreen(),
-    const SocialServiceScreen()
+     WebServiceScreen(),
+     HomeScreen(),
+     SocialScreen()
   ];
 
   void _onItemTapped(int index) {

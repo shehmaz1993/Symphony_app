@@ -29,6 +29,14 @@
         "genre": "Sports",
         "platform": "PS5",
         "price": 49.99
+      },
+      {
+        "id": 104,
+        "title": "FIFA 24",
+        "image": "assets/images/image41.jpg",
+        "genre": "Sports",
+        "platform": "PS5",
+        "price": 49.99
       }
     ]
   }

@@ -17,6 +17,16 @@ class AppTextStyles {
     fontWeight: FontWeight.w600,
     color: Colors.black,
   );
+  static const TextStyle boldWhiteHeading = TextStyle(
+    fontSize: 18,
+    fontWeight: FontWeight.bold,
+    color: Colors.white,
+  );
+  static const TextStyle subHeadingWhite70 = TextStyle(
+    color: Colors.white70,
+    fontSize: 13,  // Adjust the font size as needed
+    fontWeight: FontWeight.normal,
+  );
 
   static const TextStyle bodyText = TextStyle(
     fontSize: 14,
