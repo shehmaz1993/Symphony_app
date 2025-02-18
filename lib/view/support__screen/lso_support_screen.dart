@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:symphony_app/res/color/app_color.dart';
+import 'package:get/get.dart';
 
 class LsoQueryPage extends StatelessWidget {
   const LsoQueryPage({super.key});
@@ -23,7 +24,7 @@ class LsoQueryPage extends StatelessWidget {
       elevation: 0,
       leading: IconButton(
         icon: const Icon(Icons.arrow_back_ios, color:AppColor.redColor),
-        onPressed: () => Navigator.pop(context),
+        onPressed: () => Get.back(),
       ),
       title: const Text(
         'LSO Query',

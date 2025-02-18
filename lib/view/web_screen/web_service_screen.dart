@@ -42,23 +42,37 @@ class _WebServiceScreenState extends State<WebServiceScreen> {
 
   @override
   void dispose() {
-    _pullToRefreshController.dispose();
+    _webViewController.clearCache(); // Clear cache
+    _webViewController.clearHistory(); // Clear history
     super.dispose();
+  }
+
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.paused) {
+      _webViewController.loadUrl(urlRequest: URLRequest(url: WebUri(widget.url!), ));
+    } else if (state == AppLifecycleState.resumed) {
+      _webViewController.reload();
+    }
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text(widget.title!),centerTitle: true,),
-      body:const Center(
-        child: Text('In app web view'),
-      ) /*InAppWebView(
+      body:InAppWebView(
+        initialOptions: InAppWebViewGroupOptions(
+          android: AndroidInAppWebViewOptions(
+            useHybridComposition: true, // Use native composition
+          ),
+        ),
         initialSettings: InAppWebViewSettings(
           javaScriptEnabled: false, // Disable JS
           domStorageEnabled: false, // Disable Local Storage
         ),
         initialUrlRequest: URLRequest(url: WebUri(widget.url!), ),
-        initialOptions: _options,
+       // initialOptions: _options,
         pullToRefreshController: _pullToRefreshController,
         onWebViewCreated: (InAppWebViewController controller) {
           _webViewController = controller;
@@ -73,7 +87,7 @@ class _WebServiceScreenState extends State<WebServiceScreen> {
         onProgressChanged: (controller, progress) {
           print("Progress: $progress%");
         },
-      ),*/
+      ),
     );
   }
 

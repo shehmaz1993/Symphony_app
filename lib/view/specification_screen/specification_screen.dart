@@ -22,6 +22,7 @@ class SpecificationScreen extends StatelessWidget {
           icon: const Icon(Icons.arrow_back_ios,color: AppColor.redColor,), // Change to any icon you want
           onPressed: () {
             // Action for the button
+            Get.back();
           },
         ),
       ),
@@ -121,8 +122,8 @@ class SpecificationScreen extends StatelessWidget {
     required String image,
   }) {
     return SizedBox(
-      height: 185,
-      width: 201,
+      height: Get.height*.25,
+      width: Get.width*0.442,
       child: Card(
         color: AppColor.grayColor850,
         elevation: 4,

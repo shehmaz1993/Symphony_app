@@ -20,7 +20,7 @@ class CheckSupportScreen extends StatelessWidget {
       appBar: AppBar(
         leading: IconButton(
           icon: const Icon(Icons.arrow_back, color: Colors.red),
-          onPressed: () => Navigator.pop(context),
+          onPressed: () => Get.back(),
         ),
         title: const Text(
           'Check Support',
