@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:symphony_app/res/assets/image_assets.dart';
 import 'package:symphony_app/res/color/app_color.dart';
+import 'package:get/get.dart';
+
+import '../../res/routes/routes_name.dart';
+
 class RightDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -18,15 +22,15 @@ class RightDrawer extends StatelessWidget {
               ),
             ),
             ListTile(
-              leading: Icon(Icons.support),
-              title: Text('Support'),
+              leading: const Icon(Icons.support),
+              title: const Text('Support'),
               onTap: () {
-                Navigator.pop(context);
+                Get.toNamed(RouteName.supportView);
               },
             ),
             ListTile(
-              leading: Icon(Icons.settings),
-              title: Text('Settings'),
+              leading: const Icon(Icons.settings),
+              title: const Text('Settings'),
               onTap: () {
                 Navigator.pop(context);
               },

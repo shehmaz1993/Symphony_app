@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:symphony_app/navber.dart';
+import 'package:symphony_app/res/routes/routes.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -17,7 +18,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: NavBar(),
+      //home: NavBar(),
+      getPages: AppRoutes.appRoutes(),
     );
   }
 }

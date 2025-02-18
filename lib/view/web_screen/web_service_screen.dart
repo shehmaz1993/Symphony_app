@@ -50,7 +50,9 @@ class _WebServiceScreenState extends State<WebServiceScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text(widget.title!),centerTitle: true,),
-      body: InAppWebView(
+      body:const Center(
+        child: Text('In app web view'),
+      ) /*InAppWebView(
         initialSettings: InAppWebViewSettings(
           javaScriptEnabled: false, // Disable JS
           domStorageEnabled: false, // Disable Local Storage
@@ -71,7 +73,7 @@ class _WebServiceScreenState extends State<WebServiceScreen> {
         onProgressChanged: (controller, progress) {
           print("Progress: $progress%");
         },
-      ),
+      ),*/
     );
   }
 
