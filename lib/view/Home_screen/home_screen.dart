@@ -9,6 +9,7 @@ import 'package:symphony_app/view_model/controller/home/home_view_model.dart';
 
 import '../../data/response/status.dart';
 import '../../res/components/General_exception_widget.dart';
+import '../right_menu_bar/right_menu_bar_screen.dart';
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -30,6 +31,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       backgroundColor: AppColor.lightGrayColor,
       appBar: buildAppBar(),
+      endDrawer: RightDrawer(),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -52,14 +54,19 @@ class _HomeScreenState extends State<HomeScreen> {
       elevation: 0,
       title: const Text('My Symphony', style: AppTextStyles.heading),
       actions: [
-        IconButton(
-          onPressed: () {},
-          icon: Image.asset(ImageAsset.appDrawer),
+        Builder( // Fix: Use Builder to get the right context
+          builder: (context) => IconButton(
+            icon: Image.asset(ImageAsset.appDrawer),
+            onPressed: () {
+              Scaffold.of(context).openEndDrawer(); // Opens right drawer
+            },
+          ),
         ),
       ],
+
     );
   }
-
+//Image.asset(ImageAsset.appDrawer)
   /// **Header Banner**
   Widget buildHeaderBanner() {
     return Padding(

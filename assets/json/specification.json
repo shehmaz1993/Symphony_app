@@ -1,0 +1,42 @@
+{
+  "status": "success",
+  "data": {
+    "processor": {
+      "name": "Processor",
+      "content": "MediaTek Helio G99\n6nm, 2.2GHz Octa-core"
+    },
+    "storage": {
+      "name": "Storage",
+      "content": "ROM 128GB"
+    },
+    "display": {
+      "name": "Display",
+      "content": "6.7\" FHD+ AMOLED GG5 120Hz Punch Hole"
+    },
+    "ram": {
+      "name": "RAM",
+      "content": "16GB (8GB Expandable RAM)"
+    },
+    "simCard": {
+      "name": "Sim Card",
+      "content": "Nano+Nano/MicroTF Card"
+    },
+    "camera": {
+      "name": "Camera",
+      "content": "64MP + 2MP Macro Rear & 32MP Super Selfie with Display Flash"
+    },
+    "network": {
+      "name": "Network",
+      "content": "4G, 3G, 2G"
+    },
+    "battery": {
+      "name": "Battery",
+      "content": "5000mAh"
+    },
+    "device_sensors": {
+      "name": "Sensors",
+      "content": "Fingerprint/Proximity/Light/Gravity/Magnetic/Gyro Sensor"
+    }
+  }
+}
+
