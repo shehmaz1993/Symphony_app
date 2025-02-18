@@ -27,6 +27,11 @@ class AppTextStyles {
     fontSize: 13,  // Adjust the font size as needed
     fontWeight: FontWeight.normal,
   );
+  static const TextStyle subSmallHeadingWhite70 = TextStyle(
+    color: Colors.white70,
+    fontSize: 8,  // Adjust the font size as needed
+    fontWeight: FontWeight.bold,
+  );
 
   static const TextStyle bodyText = TextStyle(
     fontSize: 14,

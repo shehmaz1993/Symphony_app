@@ -17,8 +17,8 @@ class _StackedScreensState extends State<StackedScreens> {
   int _selectedIndex = 1;
 
   final List<Widget> _screens = [
-     WebServiceScreen(),
-     HomeScreen(),
+     const WebServiceScreen(title: "WebSite",url: 'https://www.symphony-mobile.com/',),
+     const HomeScreen(),
      SocialScreen()
   ];
 

@@ -4,7 +4,6 @@ import 'package:symphony_app/res/assets/image_assets.dart';
 import 'package:symphony_app/res/color/app_color.dart';
 import 'package:symphony_app/utils/app_text_style/app_text_style.dart';
 import 'package:symphony_app/view/Home_screen/trade_items_card.dart';
-import 'package:symphony_app/view/Home_screen/trading_items_screen.dart';
 import 'package:get/get.dart';
 import 'package:symphony_app/view_model/controller/home/home_view_model.dart';
 

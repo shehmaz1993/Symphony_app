@@ -5,9 +5,10 @@ import 'package:get/get.dart';
 import 'package:symphony_app/view_model/controller/social/social_view_model.dart';
 
 import '../../data/response/status.dart';
+import '../specification_screen/specification_screen.dart';
 class SocialScreen extends StatelessWidget {
 
-  final socialController =Get.put(SocialController());
+  final socialController = Get.put(SocialController());
 
   @override
   Widget build(BuildContext context) {
@@ -55,7 +56,7 @@ class SocialScreen extends StatelessWidget {
                     Image.asset(socialController.socialInfo.value.data!.modelImage!, width: 80, height: 80),
                     Text(
                         socialController.socialInfo.value.data!.modelName!,  // Replace 'Text' with whatever small text you want to display
-                        style: AppTextStyles.subHeadingWhite70
+                        style: AppTextStyles.subSmallHeadingWhite70
                     ),
                   ],
                 ),
@@ -70,7 +71,13 @@ class SocialScreen extends StatelessWidget {
                     ],
                   ),
                 ),
-                Icon(Icons.arrow_forward_ios, color: AppColor.redColor, size: 16),
+
+                IconButton(
+                    onPressed: (){
+                      Get.to(()=>SpecificationScreen());
+                    },
+                    icon: const Icon(Icons.arrow_forward_ios, color: AppColor.redColor, size: 16))
+
               ],
             ),
           );
